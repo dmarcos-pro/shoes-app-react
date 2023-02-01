@@ -1,0 +1,65 @@
+.layout {
+    display: flex;
+    .filter {
+        flex: 1 0 20%;
+        width: 20%;
+    }
+    .item {
+        flex: 1 0 80%;
+        width: 80%;
+    }
+}
+.filter {
+    span {
+        display: block;
+        padding: 10%;
+        cursor: pointer;
+        &.active {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+    }
+}
+.item {
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    > * {
+        flex: 0 1 calc(100%/3);
+        width: calc(100%/3);
+        display: flex;
+        flex-direction: column;
+    }
+    figure {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 10px;
+        height: 120px;
+        img {
+            width: auto;
+            height: 100px;
+            display: table;
+            margin: 0 auto;
+        }
+    }
+    .content {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        > div {
+            flex: 1 0 auto;
+        }
+        .title {
+            font-weight: bold;
+        }
+        .description {
+        }
+        .price {
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+}

@@ -3,6 +3,7 @@
     .filter {
         flex: 1 0 20%;
         width: 20%;
+        padding: 10px;
     }
     .item {
         flex: 1 0 80%;
@@ -13,6 +14,8 @@
     span {
         display: block;
         padding: 10%;
+        text-transform: uppercase;
+        font-size: 12px;
         cursor: pointer;
         &.active {
             background-color: #ddd;
